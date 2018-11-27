@@ -7,7 +7,11 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "yarn export",
+    "deploy": "gh-pages -d out",
+    "preexport": "yarn build",
+    "export": "next export"
   },
   "author": "",
   "license": "ISC",
@@ -22,5 +26,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
