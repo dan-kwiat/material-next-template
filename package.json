@@ -1,0 +1,26 @@
+{
+  "name": "material-next-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material/react-drawer": "^0.6.2",
+    "@material/react-list": "^0.6.2",
+    "@material/react-material-icon": "^0.6.2",
+    "@material/react-top-app-bar": "^0.6.2",
+    "@zeit/next-css": "^1.0.1",
+    "lodash.throttle": "^4.1.1",
+    "next": "^7.0.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
+  }
+}
