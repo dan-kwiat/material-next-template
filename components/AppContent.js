@@ -12,8 +12,11 @@ const AppContent = () => (
     <p>Dis parturient montes nascetur ridiculus. Non blandit massa enim nec dui. Sagittis eu volutpat odio facilisis mauris. Quam quisque id diam vel quam elementum pulvinar. Enim ut sem viverra aliquet eget sit. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Vitae et leo duis ut diam. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Nam aliquam sem et tortor consequat id porta nibh. Massa sapien faucibus et molestie ac feugiat sed lectus. Neque aliquam vestibulum morbi blandit cursus risus at. Ut sem viverra aliquet eget sit amet. Et egestas quis ipsum suspendisse ultrices gravida dictum. Risus feugiat in ante metus dictum at tempor commodo ullamcorper. Etiam tempor orci eu lobortis elementum nibh tellus molestie.</p>
     <p>Nullam vehicula ipsum a arcu cursus vitae congue mauris. Risus at ultrices mi tempus imperdiet nulla malesuada. Lobortis scelerisque fermentum dui faucibus in ornare quam. Nascetur ridiculus mus mauris vitae ultricies. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Cras ornare arcu dui vivamus arcu felis bibendum. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Nec ultrices dui sapien eget mi proin sed libero enim. Mauris sit amet massa vitae tortor condimentum. Viverra adipiscing at in tellus integer feugiat. Sit amet dictum sit amet justo donec. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum.</p>
     <style jsx>{`
+      h1 {
+        font-weight: 500;
+      }
       .content-container {
-        padding: 20px;
+        padding: 1em;
         max-width: 720px;
         box-sizing: border-box;
         margin: 0 auto;

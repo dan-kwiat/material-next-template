@@ -50,12 +50,11 @@ const AppLayout = () => {
         body {
           margin: 0;
           padding: 0;
-          font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen",
-            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-            sans-serif;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
           color: rgba(0,0,0,.84);
           font-size: 1.2em;
-          letter-spacing: .003em;
+          letter-spacing: .02em;
           line-height: 1.5em;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
