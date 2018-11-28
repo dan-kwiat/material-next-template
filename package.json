@@ -9,7 +9,7 @@
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "yarn export",
-    "deploy": "gh-pages -d out",
+    "deploy": "touch ./out/.nojekyll && gh-pages -d out --dotfiles true",
     "preexport": "yarn build",
     "export": "next export"
   },
@@ -21,7 +21,6 @@
     "@material/react-material-icon": "^0.6.2",
     "@material/react-top-app-bar": "^0.6.2",
     "@zeit/next-css": "^1.0.1",
-    "lodash.throttle": "^4.1.1",
     "next": "^7.0.2",
     "prop-types": "^15.6.2",
     "react": "^16.7.0-alpha.2",
