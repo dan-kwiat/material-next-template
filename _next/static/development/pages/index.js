@@ -39,7 +39,7 @@ var AppBar = function AppBar(_ref) {
   var setIsDrawerOpen = _ref.setIsDrawerOpen;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_2___default.a, {
     className: "mobile-appbar",
-    title: "Title",
+    title: "WORTHWHILE",
     navigationIcon: renderDrawerIcon(function () {
       return setIsDrawerOpen(true);
     }),
@@ -50,7 +50,7 @@ var AppBar = function AppBar(_ref) {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_2___default.a, {
     className: "desktop-appbar appbar-alternate",
-    title: "Title",
+    title: "WORTHWHILE",
     fixed: true,
     __source: {
       fileName: _jsxFileName,
@@ -64,7 +64,7 @@ var AppBar = function AppBar(_ref) {
       lineNumber: 24
     },
     __self: this
-  }, "\n      @media (min-width: 840px) {\n        .mobile-appbar {\n          display: none !important;\n        }\n      }\n      @media (max-width: 839px) {\n        .desktop-appbar {\n          display: none !important;\n        }\n      }\n    "));
+  }, "\n      @media (min-width: 840px) {\n        .mobile-appbar {\n          display: none !important;\n        }\n      }\n      @media (max-width: 839px) {\n        .desktop-appbar {\n          display: none !important;\n        }\n      }\n      .mdc-top-app-bar__title {\n        letter-spacing: 0.1em;\n      }\n    "));
 };
 
 AppBar.propTypes = {
