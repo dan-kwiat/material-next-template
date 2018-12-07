@@ -9,30 +9,27 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material/react-top-app-bar */ "./node_modules/@material/react-top-app-bar/dist/index.js");
-/* harmony import */ var _material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_react_material_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material/react-material-icon */ "./node_modules/@material/react-material-icon/dist/index.js");
-/* harmony import */ var _material_react_material_icon__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material/react-top-app-bar */ "./node_modules/@material/react-top-app-bar/dist/index.js");
+/* harmony import */ var _material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_react_material_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material/react-material-icon */ "./node_modules/@material/react-material-icon/dist/index.js");
+/* harmony import */ var _material_react_material_icon__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/dan/Documents/Repositories/material-next-template/components/AppBar.js";
 
 
 
 
 
-
 var renderDrawerIcon = function renderDrawerIcon(onClick) {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_3___default.a, {
     icon: "menu",
     onClick: onClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: this
   });
@@ -40,13 +37,7 @@ var renderDrawerIcon = function renderDrawerIcon(onClick) {
 
 var AppBar = function AppBar(_ref) {
   var setIsDrawerOpen = _ref.setIsDrawerOpen;
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_2___default.a, {
     className: "mobile-appbar",
     title: "Title",
     navigationIcon: renderDrawerIcon(function () {
@@ -54,27 +45,30 @@ var AppBar = function AppBar(_ref) {
     }),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_2___default.a, {
     className: "desktop-appbar",
     title: "Title",
     fixed: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 19
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    styleId: "3595979589",
-    css: "@media (min-width:840px){.mobile-appbar.jsx-3595979589{display:none !important;}}@media (max-width:839px){.desktop-appbar.jsx-3595979589{display:none !important;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYW4vRG9jdW1lbnRzL1JlcG9zaXRvcmllcy9tYXRlcmlhbC1uZXh0LXRlbXBsYXRlL2NvbXBvbmVudHMvQXBwQmFyLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXdCZ0IsQUFJbUMsQUFLQSx3QkFKMUIsQUFLQSIsImZpbGUiOiIvVXNlcnMvZGFuL0RvY3VtZW50cy9SZXBvc2l0b3JpZXMvbWF0ZXJpYWwtbmV4dC10ZW1wbGF0ZS9jb21wb25lbnRzL0FwcEJhci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcbmltcG9ydCBQcm9wVHlwZXMgZnJvbSAncHJvcC10eXBlcydcbmltcG9ydCBUb3BBcHBCYXIgZnJvbSAnQG1hdGVyaWFsL3JlYWN0LXRvcC1hcHAtYmFyJ1xuaW1wb3J0IE1hdGVyaWFsSWNvbiBmcm9tICdAbWF0ZXJpYWwvcmVhY3QtbWF0ZXJpYWwtaWNvbidcblxuY29uc3QgcmVuZGVyRHJhd2VySWNvbiA9IG9uQ2xpY2sgPT4gKFxuICA8TWF0ZXJpYWxJY29uXG4gICAgaWNvbj0nbWVudSdcbiAgICBvbkNsaWNrPXtvbkNsaWNrfVxuICAvPlxuKVxuXG5jb25zdCBBcHBCYXIgPSAoeyBzZXRJc0RyYXdlck9wZW4gfSkgPT4gKFxuICA8UmVhY3QuRnJhZ21lbnQ+XG4gICAgPFRvcEFwcEJhclxuICAgICAgY2xhc3NOYW1lPSdtb2JpbGUtYXBwYmFyJ1xuICAgICAgdGl0bGU9J1RpdGxlJ1xuICAgICAgbmF2aWdhdGlvbkljb249e3JlbmRlckRyYXdlckljb24oKCkgPT4gc2V0SXNEcmF3ZXJPcGVuKHRydWUpKX1cbiAgICAvPlxuICAgIDxUb3BBcHBCYXJcbiAgICAgIGNsYXNzTmFtZT0nZGVza3RvcC1hcHBiYXInXG4gICAgICB0aXRsZT0nVGl0bGUnXG4gICAgICBmaXhlZFxuICAgIC8+XG4gICAgPHN0eWxlIGpzeD57YFxuICAgICAgQG1lZGlhIChtaW4td2lkdGg6IDg0MHB4KSB7XG4gICAgICAgIC5tb2JpbGUtYXBwYmFyIHtcbiAgICAgICAgICBkaXNwbGF5OiBub25lICFpbXBvcnRhbnQ7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICAgIEBtZWRpYSAobWF4LXdpZHRoOiA4MzlweCkge1xuICAgICAgICAuZGVza3RvcC1hcHBiYXIge1xuICAgICAgICAgIGRpc3BsYXk6IG5vbmUgIWltcG9ydGFudDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIGB9PC9zdHlsZT5cbiAgPC9SZWFjdC5GcmFnbWVudD5cbilcbkFwcEJhci5wcm9wVHlwZXMgPSB7XG4gIHNldElzRHJhd2VyT3BlbjogUHJvcFR5cGVzLmZ1bmMuaXNSZXF1aXJlZCxcbn1cblxuZXhwb3J0IGRlZmF1bHQgQXBwQmFyIl19 */\n/*@ sourceURL=/Users/dan/Documents/Repositories/material-next-template/components/AppBar.js */",
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
+    jsx: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
     __self: this
-  }));
+  }, "\n      @media (min-width: 840px) {\n        .mobile-appbar {\n          display: none !important;\n        }\n      }\n      @media (max-width: 839px) {\n        .desktop-appbar {\n          display: none !important;\n        }\n      }\n    "));
 };
 
 AppBar.propTypes = {
-  setIsDrawerOpen: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired
+  setIsDrawerOpen: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (AppBar);
 
@@ -202,20 +196,17 @@ var AppContent = function AppContent() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_react_drawer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material/react-drawer */ "./node_modules/@material/react-drawer/dist/index.js");
-/* harmony import */ var _material_react_drawer__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_react_drawer__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_react_list__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material/react-list */ "./node_modules/@material/react-list/dist/index.js");
-/* harmony import */ var _material_react_list__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_react_list__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_react_material_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material/react-material-icon */ "./node_modules/@material/react-material-icon/dist/index.js");
-/* harmony import */ var _material_react_material_icon__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_react_drawer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material/react-drawer */ "./node_modules/@material/react-drawer/dist/index.js");
+/* harmony import */ var _material_react_drawer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_react_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material/react-list */ "./node_modules/@material/react-list/dist/index.js");
+/* harmony import */ var _material_react_list__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_react_list__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_react_material_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material/react-material-icon */ "./node_modules/@material/react-material-icon/dist/index.js");
+/* harmony import */ var _material_react_material_icon__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/dan/Documents/Repositories/material-next-template/components/Drawer.js";
-
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -282,7 +273,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       var onItemClick = this.props.onItemClick;
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3___default.a, {
         singleSelection: true,
         selectedIndex: this.state.selectedIndex,
         handleSelect: this.setSelectedIndex,
@@ -291,15 +282,15 @@ function (_React$Component) {
           lineNumber: 28
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItem"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
         onClick: onItemClick,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 33
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItemGraphic"], {
-        graphic: react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemGraphic"], {
+        graphic: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_4___default.a, {
           icon: "home",
           __source: {
             fileName: _jsxFileName,
@@ -312,22 +303,22 @@ function (_React$Component) {
           lineNumber: 34
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItemText"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
         primaryText: "Home",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 35
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItem"], {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
         onClick: onItemClick,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 37
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItemGraphic"], {
-        graphic: react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemGraphic"], {
+        graphic: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_4___default.a, {
           icon: "search",
           __source: {
             fileName: _jsxFileName,
@@ -340,22 +331,22 @@ function (_React$Component) {
           lineNumber: 38
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItemText"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
         primaryText: "Search",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 39
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItem"], {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
         onClick: onItemClick,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 41
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItemGraphic"], {
-        graphic: react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemGraphic"], {
+        graphic: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_4___default.a, {
           icon: "settings",
           __source: {
             fileName: _jsxFileName,
@@ -368,14 +359,14 @@ function (_React$Component) {
           lineNumber: 42
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItemText"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
         primaryText: "Settings",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 43
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItemMeta"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemMeta"], {
         meta: "meta info",
         __source: {
           fileName: _jsxFileName,
@@ -387,30 +378,24 @@ function (_React$Component) {
   }]);
 
   return DrawerList;
-}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 DrawerList.propTypes = {
-  onItemClick: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired
+  onItemClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired
 };
 
 var DeviceAppropriateDrawer = function DeviceAppropriateDrawer(_ref) {
   var isOpen = _ref.isOpen,
       setIsDrawerOpen = _ref.setIsDrawerOpen,
       children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2___default.a, {
     className: "permanent-drawer",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 56
     },
     __self: this
-  }, children), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2___default.a, {
     className: "modal-drawer",
     modal: true,
     open: isOpen,
@@ -425,50 +410,53 @@ var DeviceAppropriateDrawer = function DeviceAppropriateDrawer(_ref) {
       lineNumber: 61
     },
     __self: this
-  }, children), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    styleId: "3329626593",
-    css: "@media (min-width:840px){.modal-drawer.jsx-3329626593{display:none !important;}}@media (max-width:839px){.permanent-drawer.jsx-3329626593{display:none !important;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYW4vRG9jdW1lbnRzL1JlcG9zaXRvcmllcy9tYXRlcmlhbC1uZXh0LXRlbXBsYXRlL2NvbXBvbmVudHMvRHJhd2VyLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXFFZ0IsQUFJbUMsQUFLQSx3QkFKMUIsQUFLQSIsImZpbGUiOiIvVXNlcnMvZGFuL0RvY3VtZW50cy9SZXBvc2l0b3JpZXMvbWF0ZXJpYWwtbmV4dC10ZW1wbGF0ZS9jb21wb25lbnRzL0RyYXdlci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcbmltcG9ydCBQcm9wVHlwZXMgZnJvbSAncHJvcC10eXBlcydcbmltcG9ydCBOYXZEcmF3ZXIsIHtcbiAgRHJhd2VySGVhZGVyLFxuICBEcmF3ZXJTdWJ0aXRsZSxcbiAgRHJhd2VyVGl0bGUsXG4gIERyYXdlckNvbnRlbnQsXG59IGZyb20gJ0BtYXRlcmlhbC9yZWFjdC1kcmF3ZXInXG5pbXBvcnQgTGlzdCwge1xuICBMaXN0SXRlbSxcbiAgTGlzdEl0ZW1UZXh0LFxuICBMaXN0SXRlbUdyYXBoaWMsXG4gIExpc3RJdGVtTWV0YSxcbn0gZnJvbSAnQG1hdGVyaWFsL3JlYWN0LWxpc3QnXG5pbXBvcnQgTWF0ZXJpYWxJY29uIGZyb20gJ0BtYXRlcmlhbC9yZWFjdC1tYXRlcmlhbC1pY29uJ1xuXG5jbGFzcyBEcmF3ZXJMaXN0IGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcbiAgc3RhdGUgPSB7XG4gICAgc2VsZWN0ZWRJbmRleDogMCxcbiAgfVxuICBzZXRTZWxlY3RlZEluZGV4ID0gc2VsZWN0ZWRJbmRleCA9PiB7XG4gICAgY29uc29sZS5sb2coYFNlbGVjdGVkIGluZGV4OiAke3NlbGVjdGVkSW5kZXh9YClcbiAgICB0aGlzLnNldFN0YXRlKHsgc2VsZWN0ZWRJbmRleCB9KVxuICB9XG4gIHJlbmRlcigpIHtcbiAgICBjb25zdCB7IG9uSXRlbUNsaWNrIH0gPSB0aGlzLnByb3BzXG4gICAgcmV0dXJuIChcbiAgICAgIDxMaXN0XG4gICAgICAgIHNpbmdsZVNlbGVjdGlvblxuICAgICAgICBzZWxlY3RlZEluZGV4PXt0aGlzLnN0YXRlLnNlbGVjdGVkSW5kZXh9XG4gICAgICAgIGhhbmRsZVNlbGVjdD17dGhpcy5zZXRTZWxlY3RlZEluZGV4fVxuICAgICAgPlxuICAgICAgICA8TGlzdEl0ZW0gb25DbGljaz17b25JdGVtQ2xpY2t9PlxuICAgICAgICAgIDxMaXN0SXRlbUdyYXBoaWMgZ3JhcGhpYz17PE1hdGVyaWFsSWNvbiBpY29uPSdob21lJy8+fSAvPlxuICAgICAgICAgIDxMaXN0SXRlbVRleHQgcHJpbWFyeVRleHQ9J0hvbWUnIC8+XG4gICAgICAgIDwvTGlzdEl0ZW0+XG4gICAgICAgIDxMaXN0SXRlbSBvbkNsaWNrPXtvbkl0ZW1DbGlja30+XG4gICAgICAgICAgPExpc3RJdGVtR3JhcGhpYyBncmFwaGljPXs8TWF0ZXJpYWxJY29uIGljb249J3NlYXJjaCcvPn0gLz5cbiAgICAgICAgICA8TGlzdEl0ZW1UZXh0IHByaW1hcnlUZXh0PSdTZWFyY2gnIC8+XG4gICAgICAgIDwvTGlzdEl0ZW0+XG4gICAgICAgIDxMaXN0SXRlbSBvbkNsaWNrPXtvbkl0ZW1DbGlja30+XG4gICAgICAgICAgPExpc3RJdGVtR3JhcGhpYyBncmFwaGljPXs8TWF0ZXJpYWxJY29uIGljb249J3NldHRpbmdzJy8+fSAvPlxuICAgICAgICAgIDxMaXN0SXRlbVRleHQgcHJpbWFyeVRleHQ9J1NldHRpbmdzJyAvPlxuICAgICAgICAgIDxMaXN0SXRlbU1ldGEgbWV0YT0nbWV0YSBpbmZvJyAvPlxuICAgICAgICA8L0xpc3RJdGVtPlxuICAgICAgPC9MaXN0PlxuICAgIClcbiAgfVxufVxuRHJhd2VyTGlzdC5wcm9wVHlwZXMgPSB7XG4gIG9uSXRlbUNsaWNrOiBQcm9wVHlwZXMuZnVuYy5pc1JlcXVpcmVkLFxufVxuXG5jb25zdCBEZXZpY2VBcHByb3ByaWF0ZURyYXdlciA9ICh7IGlzT3Blbiwgc2V0SXNEcmF3ZXJPcGVuLCBjaGlsZHJlbiB9KSA9PiAoXG4gIDxSZWFjdC5GcmFnbWVudD5cbiAgICA8TmF2RHJhd2VyXG4gICAgICBjbGFzc05hbWU9J3Blcm1hbmVudC1kcmF3ZXInXG4gICAgPlxuICAgICAge2NoaWxkcmVufVxuICAgIDwvTmF2RHJhd2VyPlxuICAgIDxOYXZEcmF3ZXJcbiAgICAgIGNsYXNzTmFtZT0nbW9kYWwtZHJhd2VyJ1xuICAgICAgbW9kYWxcbiAgICAgIG9wZW49e2lzT3Blbn1cbiAgICAgIG9uT3Blbj17KCkgPT4gc2V0SXNEcmF3ZXJPcGVuKHRydWUpfVxuICAgICAgb25DbG9zZT17KCkgPT4gc2V0SXNEcmF3ZXJPcGVuKGZhbHNlKX1cbiAgICA+XG4gICAgICB7Y2hpbGRyZW59XG4gICAgPC9OYXZEcmF3ZXI+XG4gICAgPHN0eWxlIGpzeD57YFxuICAgICAgQG1lZGlhIChtaW4td2lkdGg6IDg0MHB4KSB7XG4gICAgICAgIC5tb2RhbC1kcmF3ZXIge1xuICAgICAgICAgIGRpc3BsYXk6IG5vbmUgIWltcG9ydGFudDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgICAgQG1lZGlhIChtYXgtd2lkdGg6IDgzOXB4KSB7XG4gICAgICAgIC5wZXJtYW5lbnQtZHJhd2VyIHtcbiAgICAgICAgICBkaXNwbGF5OiBub25lICFpbXBvcnRhbnQ7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICBgfTwvc3R5bGU+XG4gIDwvUmVhY3QuRnJhZ21lbnQ+XG4pXG5EZXZpY2VBcHByb3ByaWF0ZURyYXdlci5wcm9wVHlwZXMgPSB7XG4gIGlzT3BlbjogUHJvcFR5cGVzLmJvb2wuaXNSZXF1aXJlZCxcbiAgc2V0SXNEcmF3ZXJPcGVuOiBQcm9wVHlwZXMuZnVuYy5pc1JlcXVpcmVkLFxufVxuXG5jb25zdCBEcmF3ZXIgPSBwcm9wcyA9PiAoXG4gIDxEZXZpY2VBcHByb3ByaWF0ZURyYXdlciB7Li4ucHJvcHN9PlxuICAgIDxEcmF3ZXJIZWFkZXI+XG4gICAgICA8RHJhd2VyVGl0bGU+XG4gICAgICAgIERyYXdlciBUaXRsZVxuICAgICAgPC9EcmF3ZXJUaXRsZT5cbiAgICAgIDxEcmF3ZXJTdWJ0aXRsZT5cbiAgICAgICAgRHJhd2VyIFN1YnRpdGxlXG4gICAgICA8L0RyYXdlclN1YnRpdGxlPlxuICAgIDwvRHJhd2VySGVhZGVyPlxuICAgIDxEcmF3ZXJDb250ZW50PlxuICAgICAgPERyYXdlckxpc3RcbiAgICAgICAgb25JdGVtQ2xpY2s9eygpID0+IHtcbiAgICAgICAgICBwcm9wcy5zZXRJc0RyYXdlck9wZW4gJiYgcHJvcHMuc2V0SXNEcmF3ZXJPcGVuKGZhbHNlKVxuICAgICAgICB9fVxuICAgICAgLz5cbiAgICAgIDxhIGhyZWY9Jy8nPnBsYWluIGxpbms8L2E+XG4gICAgPC9EcmF3ZXJDb250ZW50PlxuICA8L0RldmljZUFwcHJvcHJpYXRlRHJhd2VyPlxuKVxuRHJhd2VyLnByb3BUeXBlcyA9IHtcbiAgaXNPcGVuOiBQcm9wVHlwZXMuYm9vbC5pc1JlcXVpcmVkLFxuICBzZXRJc0RyYXdlck9wZW46IFByb3BUeXBlcy5mdW5jLmlzUmVxdWlyZWQsXG59XG5cbmV4cG9ydCBkZWZhdWx0IERyYXdlciJdfQ== */\n/*@ sourceURL=/Users/dan/Documents/Repositories/material-next-template/components/Drawer.js */",
+  }, children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
+    jsx: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
     __self: this
-  }));
+  }, "\n      @media (min-width: 840px) {\n        .modal-drawer {\n          display: none !important;\n        }\n      }\n      @media (max-width: 839px) {\n        .permanent-drawer {\n          display: none !important;\n        }\n      }\n    "));
 };
 
 DeviceAppropriateDrawer.propTypes = {
-  isOpen: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool.isRequired,
-  setIsDrawerOpen: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired
+  isOpen: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool.isRequired,
+  setIsDrawerOpen: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired
 };
 
 var Drawer = function Drawer(props) {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(DeviceAppropriateDrawer, _extends({}, props, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DeviceAppropriateDrawer, _extends({}, props, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 90
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_3__["DrawerHeader"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2__["DrawerHeader"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 91
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_3__["DrawerTitle"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2__["DrawerTitle"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 92
     },
     __self: this
-  }, "Drawer Title"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_3__["DrawerSubtitle"], {
+  }, "Drawer Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2__["DrawerSubtitle"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 95
     },
     __self: this
-  }, "Drawer Subtitle")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_3__["DrawerContent"], {
+  }, "Drawer Subtitle")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2__["DrawerContent"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 99
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(DrawerList, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DrawerList, {
     onItemClick: function onItemClick() {
       props.setIsDrawerOpen && props.setIsDrawerOpen(false);
     },
@@ -477,7 +465,7 @@ var Drawer = function Drawer(props) {
       lineNumber: 100
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "/",
     __source: {
       fileName: _jsxFileName,
@@ -488,8 +476,8 @@ var Drawer = function Drawer(props) {
 };
 
 Drawer.propTypes = {
-  isOpen: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool.isRequired,
-  setIsDrawerOpen: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired
+  isOpen: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool.isRequired,
+  setIsDrawerOpen: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Drawer);
 
