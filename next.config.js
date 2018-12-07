@@ -1,5 +1,5 @@
-const withCSS = require('@zeit/next-css')
+const withSass = require('@zeit/next-sass')
 
-module.exports = withCSS({
+module.exports = withSass({
   assetPrefix: process.env.NODE_ENV === 'production' ? '/material-next-template' : '',
 })

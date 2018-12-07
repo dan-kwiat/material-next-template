@@ -1,0 +1,15 @@
+$mdc-theme-on-primary: darkseagreen;
+
+@import '@material/react-drawer/index.scss';
+@import '@material/react-list/index.scss';
+@import '@material/react-top-app-bar/index.scss';
+@import '@material/react-material-icon/index.scss';
+
+.desktop-appbar, .mobile-appbar {
+  @include mdc-top-app-bar-fill-color-accessible(#1c2938);
+}
+
+.modal-drawer, .permanent-drawer {
+  @include mdc-drawer-fill-color-accessible(#15202b);
+  @include mdc-drawer-border-color(rgba(255,255,255,.8));
+}
