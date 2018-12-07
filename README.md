@@ -4,6 +4,7 @@ Basic boilerplate for a responsive app layout with SSR using Material Design Com
 * https://github.com/material-components/material-components-web-react
 * https://github.com/zeit/next.js
 
+### Demo
 [Demo](https://dan-kwiat.github.io/material-next-template/)
 
 ### Install
