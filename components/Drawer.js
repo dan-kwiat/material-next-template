@@ -52,7 +52,7 @@ DrawerList.propTypes = {
 }
 
 const DeviceAppropriateDrawer = ({ isOpen, setIsDrawerOpen, children }) => (
-  <React.Fragment>
+  <>
     <NavDrawer
       className='permanent-drawer'
     >
@@ -79,7 +79,7 @@ const DeviceAppropriateDrawer = ({ isOpen, setIsDrawerOpen, children }) => (
         }
       }
     `}</style>
-  </React.Fragment>
+  </>
 )
 DeviceAppropriateDrawer.propTypes = {
   isOpen: PropTypes.bool.isRequired,

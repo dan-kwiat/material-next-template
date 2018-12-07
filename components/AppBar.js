@@ -1,4 +1,3 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import TopAppBar from '@material/react-top-app-bar'
 import MaterialIcon from '@material/react-material-icon'
@@ -11,7 +10,7 @@ const renderDrawerIcon = onClick => (
 )
 
 const AppBar = ({ setIsDrawerOpen }) => (
-  <React.Fragment>
+  <>
     <TopAppBar
       className='mobile-appbar'
       title='Title'
@@ -34,7 +33,7 @@ const AppBar = ({ setIsDrawerOpen }) => (
         }
       }
     `}</style>
-  </React.Fragment>
+  </>
 )
 AppBar.propTypes = {
   setIsDrawerOpen: PropTypes.func.isRequired,
