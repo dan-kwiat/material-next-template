@@ -1,4 +1,6 @@
-$mdc-theme-on-primary: darkseagreen;
+$mdc-theme-background: dark;
+$mdc-theme-on-primary: rgba(255,255,255,.84);
+$mdc-theme-primary: darkseagreen;
 
 @import '@material/react-drawer/index.scss';
 @import '@material/react-list/index.scss';
@@ -12,4 +14,18 @@ $mdc-theme-on-primary: darkseagreen;
 .modal-drawer, .permanent-drawer {
   @include mdc-drawer-fill-color-accessible(#15202b);
   @include mdc-drawer-border-color(rgba(255,255,255,.8));
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #10171e;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: rgba(255,255,255,.84);
+  font-size: 1.2em;
+  letter-spacing: .02em;
+  line-height: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

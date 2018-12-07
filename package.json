@@ -6,12 +6,12 @@
   "scripts": {
     "dev": "export SASS_PATH=./node_modules && next",
     "build": "export SASS_PATH=./node_modules && next build",
-    "start": "next start",
+    "start": "export SASS_PATH=./node_modules && next start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "yarn export",
     "deploy": "touch ./out/.nojekyll && gh-pages -d out --dotfiles true",
     "preexport": "yarn build",
-    "export": "next export"
+    "export": "export SASS_PATH=./node_modules && next export"
   },
   "author": "",
   "license": "ISC",
@@ -24,8 +24,8 @@
     "next": "^7.0.2",
     "node-sass": "^4.10.0",
     "prop-types": "^15.6.2",
-    "react": "^16.7.0-alpha.2",
-    "react-dom": "^16.7.0-alpha.2"
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1"
