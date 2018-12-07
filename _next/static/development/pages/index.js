@@ -39,7 +39,7 @@ var AppBar = function AppBar(_ref) {
   var setIsDrawerOpen = _ref.setIsDrawerOpen;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_2___default.a, {
     className: "mobile-appbar",
-    title: "WORTHWHILE",
+    title: "Title",
     navigationIcon: renderDrawerIcon(function () {
       return setIsDrawerOpen(true);
     }),
@@ -49,8 +49,8 @@ var AppBar = function AppBar(_ref) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    className: "desktop-appbar appbar-alternate",
-    title: "WORTHWHILE",
+    className: "desktop-appbar",
+    title: "Title",
     fixed: true,
     __source: {
       fileName: _jsxFileName,
@@ -64,7 +64,7 @@ var AppBar = function AppBar(_ref) {
       lineNumber: 24
     },
     __self: this
-  }, "\n      @media (min-width: 840px) {\n        .mobile-appbar {\n          display: none !important;\n        }\n      }\n      @media (max-width: 839px) {\n        .desktop-appbar {\n          display: none !important;\n        }\n      }\n      .mdc-top-app-bar__title {\n        letter-spacing: 0.1em;\n      }\n    "));
+  }, "\n      @media (min-width: 840px) {\n        .mobile-appbar {\n          display: none !important;\n        }\n      }\n      @media (max-width: 839px) {\n        .desktop-appbar {\n          display: none !important;\n        }\n      }\n    "));
 };
 
 AppBar.propTypes = {
@@ -208,129 +208,189 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_react_material_icon__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/dan/Documents/Repositories/material-next-template/components/Drawer.js";
 
-
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
 
 
-var DrawerList = function DrawerList(_ref) {
-  var onItemClick = _ref.onItemClick;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
-    onClick: onItemClick,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemGraphic"], {
-    graphic: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_4___default.a, {
-      icon: "home",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      },
-      __self: this
-    }),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
-    primaryText: "Home",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
-    onClick: onItemClick,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemGraphic"], {
-    graphic: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_4___default.a, {
-      icon: "search",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23
-      },
-      __self: this
-    }),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
-    primaryText: "Search",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
-    onClick: onItemClick,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemGraphic"], {
-    graphic: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_4___default.a, {
-      icon: "settings",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27
-      },
-      __self: this
-    }),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
-    primaryText: "Settings",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemMeta"], {
-    meta: "meta info",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  })));
-};
+
+
+var DrawerList =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(DrawerList, _React$Component);
+
+  function DrawerList() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, DrawerList);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(DrawerList)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
+      selectedIndex: 0
+    });
+
+    return _this;
+  }
+
+  _createClass(DrawerList, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var onItemClick = this.props.onItemClick;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        singleSelection: true,
+        selectedIndex: 0,
+        handleSelect: function handleSelect(selectedIndex) {
+          return _this2.setState({
+            selectedIndex: selectedIndex
+          });
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
+        onClick: onItemClick,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemGraphic"], {
+        graphic: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          icon: "home",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 30
+          },
+          __self: this
+        }),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
+        primaryText: "Home",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
+        onClick: onItemClick,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemGraphic"], {
+        graphic: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          icon: "search",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 34
+          },
+          __self: this
+        }),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
+        primaryText: "Search",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
+        onClick: onItemClick,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemGraphic"], {
+        graphic: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          icon: "settings",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 38
+          },
+          __self: this
+        }),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
+        primaryText: "Settings",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemMeta"], {
+        meta: "meta info",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      })));
+    }
+  }]);
+
+  return DrawerList;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 DrawerList.propTypes = {
   onItemClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired
 };
 
-var DeviceAppropriateDrawer = function DeviceAppropriateDrawer(_ref2) {
-  var isOpen = _ref2.isOpen,
-      setIsDrawerOpen = _ref2.setIsDrawerOpen,
-      children = _ref2.children;
+var DeviceAppropriateDrawer = function DeviceAppropriateDrawer(_ref) {
+  var isOpen = _ref.isOpen,
+      setIsDrawerOpen = _ref.setIsDrawerOpen,
+      children = _ref.children;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2___default.a, {
     className: "permanent-drawer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 52
     },
     __self: this
   }, children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -345,14 +405,14 @@ var DeviceAppropriateDrawer = function DeviceAppropriateDrawer(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 57
     },
     __self: this
   }, children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 66
     },
     __self: this
   }, "\n      @media (min-width: 840px) {\n        .modal-drawer {\n          display: none !important;\n        }\n      }\n      @media (max-width: 839px) {\n        .permanent-drawer {\n          display: none !important;\n        }\n      }\n    "));
@@ -367,31 +427,31 @@ var Drawer = function Drawer(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DeviceAppropriateDrawer, _extends({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 86
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2__["DrawerHeader"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 87
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2__["DrawerTitle"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 88
     },
     __self: this
   }, "Drawer Title"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2__["DrawerSubtitle"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 91
     },
     __self: this
   }, "Drawer Subtitle")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2__["DrawerContent"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 95
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DrawerList, {
@@ -400,17 +460,17 @@ var Drawer = function Drawer(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 96
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 101
     },
     __self: this
-  }, "test link")));
+  }, "plain link")));
 };
 
 Drawer.propTypes = {
@@ -22584,10 +22644,6 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
- // import '@material/react-drawer/dist/drawer.min.css'
-// import '@material/react-list/dist/list.min.css'
-// import '@material/react-top-app-bar/dist/top-app-bar.min.css'
-// import '@material/react-material-icon/dist/material-icon.min.css'
 
 
 
@@ -22598,57 +22654,57 @@ var AppLayout = function AppLayout() {
       setIsDrawerOpen = _useState2[1];
 
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-2070759799",
+    className: "jsx-1244013185",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 11
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", {
-    className: "jsx-2070759799",
+    className: "jsx-1244013185",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 12
     },
     __self: this
   }, "Material Next"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     href: "https://fonts.googleapis.com/icon?family=Material+Icons",
     rel: "stylesheet",
-    className: "jsx-2070759799",
+    className: "jsx-1244013185",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 13
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     href: "https://fonts.googleapis.com/css?family=Roboto",
     rel: "stylesheet",
-    className: "jsx-2070759799",
+    className: "jsx-1244013185",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 14
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     name: "viewport",
     content: "initial-scale=1.0, width=device-width",
-    className: "jsx-2070759799",
+    className: "jsx-1244013185",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 15
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-2070759799" + " " + 'desktop-drawer-container',
+    className: "jsx-1244013185" + " " + 'desktop-drawer-container',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 17
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Drawer"], {
@@ -22656,42 +22712,38 @@ var AppLayout = function AppLayout() {
     setIsDrawerOpen: setIsDrawerOpen,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 18
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-2070759799" + " " + 'desktop-drawer-app-content',
+    className: "jsx-1244013185" + " " + 'desktop-drawer-app-content',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 22
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["AppBar"], {
     setIsDrawerOpen: setIsDrawerOpen,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 23
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_4__["TopAppBarFixedAdjust"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 26
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["AppContent"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 27
     },
     __self: this
   })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     styleId: "1244013185",
-    css: "@media (min-width:840px){.desktop-drawer-container.jsx-2070759799{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;height:100vh;overflow:hidden;}.desktop-drawer-app-content.jsx-2070759799{-webkit-flex:auto;-ms-flex:auto;flex:auto;overflow:auto;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYW4vRG9jdW1lbnRzL1JlcG9zaXRvcmllcy9tYXRlcmlhbC1uZXh0LXRlbXBsYXRlL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW9Da0IsQUFJMEIsQUFNSCwwQ0FDSSxjQUNoQixrQkFQcUIscUVBQ04sYUFDRyxnQkFDbEIiLCJmaWxlIjoiL1VzZXJzL2Rhbi9Eb2N1bWVudHMvUmVwb3NpdG9yaWVzL21hdGVyaWFsLW5leHQtdGVtcGxhdGUvcGFnZXMvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCdcbmltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcbmltcG9ydCB7IEFwcEJhciwgQXBwQ29udGVudCwgRHJhd2VyIH0gZnJvbSAnLi4vY29tcG9uZW50cydcbmltcG9ydCB7IFRvcEFwcEJhckZpeGVkQWRqdXN0IH0gZnJvbSAnQG1hdGVyaWFsL3JlYWN0LXRvcC1hcHAtYmFyJ1xuXG4vLyBpbXBvcnQgJ0BtYXRlcmlhbC9yZWFjdC1kcmF3ZXIvZGlzdC9kcmF3ZXIubWluLmNzcydcbi8vIGltcG9ydCAnQG1hdGVyaWFsL3JlYWN0LWxpc3QvZGlzdC9saXN0Lm1pbi5jc3MnXG4vLyBpbXBvcnQgJ0BtYXRlcmlhbC9yZWFjdC10b3AtYXBwLWJhci9kaXN0L3RvcC1hcHAtYmFyLm1pbi5jc3MnXG4vLyBpbXBvcnQgJ0BtYXRlcmlhbC9yZWFjdC1tYXRlcmlhbC1pY29uL2Rpc3QvbWF0ZXJpYWwtaWNvbi5taW4uY3NzJ1xuXG5pbXBvcnQgJy4uL2luZGV4LnNjc3MnXG5cbmNvbnN0IEFwcExheW91dCA9ICgpID0+IHtcbiAgY29uc3QgW2lzRHJhd2VyT3Blbiwgc2V0SXNEcmF3ZXJPcGVuXSA9IHVzZVN0YXRlKGZhbHNlKVxuICByZXR1cm4gKFxuICAgIDxkaXY+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPHRpdGxlPk1hdGVyaWFsIE5leHQ8L3RpdGxlPlxuICAgICAgICA8bGluayBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9pY29uP2ZhbWlseT1NYXRlcmlhbCtJY29uc1wiIHJlbD1cInN0eWxlc2hlZXRcIiAvPlxuICAgICAgICA8bGluayBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVJvYm90b1wiIHJlbD1cInN0eWxlc2hlZXRcIiAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwiaW5pdGlhbC1zY2FsZT0xLjAsIHdpZHRoPWRldmljZS13aWR0aFwiIC8+XG4gICAgICA8L0hlYWQ+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT0nZGVza3RvcC1kcmF3ZXItY29udGFpbmVyJz5cbiAgICAgICAgPERyYXdlclxuICAgICAgICAgIGlzT3Blbj17aXNEcmF3ZXJPcGVufVxuICAgICAgICAgIHNldElzRHJhd2VyT3Blbj17c2V0SXNEcmF3ZXJPcGVufVxuICAgICAgICAvPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT0nZGVza3RvcC1kcmF3ZXItYXBwLWNvbnRlbnQnPlxuICAgICAgICAgIDxBcHBCYXJcbiAgICAgICAgICAgIHNldElzRHJhd2VyT3Blbj17c2V0SXNEcmF3ZXJPcGVufVxuICAgICAgICAgIC8+XG4gICAgICAgICAgPFRvcEFwcEJhckZpeGVkQWRqdXN0PlxuICAgICAgICAgICAgPEFwcENvbnRlbnQgLz5cbiAgICAgICAgICA8L1RvcEFwcEJhckZpeGVkQWRqdXN0PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICBAbWVkaWEgKG1pbi13aWR0aDogODQwcHgpIHtcbiAgICAgICAgICAuZGVza3RvcC1kcmF3ZXItY29udGFpbmVyIHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgICAgICAgICAgaGVpZ2h0OiAxMDB2aDtcbiAgICAgICAgICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgICAgICAgfVxuICAgICAgICAgIC5kZXNrdG9wLWRyYXdlci1hcHAtY29udGVudCB7XG4gICAgICAgICAgICBmbGV4OiBhdXRvO1xuICAgICAgICAgICAgb3ZlcmZsb3c6IGF1dG87XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgICA8c3R5bGUgZ2xvYmFsIGpzeD57YFxuICAgICAgICBib2R5IHtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiAjMTAxNzFlO1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvJywgc2Fucy1zZXJpZjtcbiAgICAgICAgICBmb250LXdlaWdodDogMzAwO1xuICAgICAgICAgIGNvbG9yOiByZ2JhKDI1NSwyNTUsMjU1LC44NCk7XG4gICAgICAgICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICAgICAgICBsZXR0ZXItc3BhY2luZzogLjAyZW07XG4gICAgICAgICAgbGluZS1oZWlnaHQ6IDEuNWVtO1xuICAgICAgICAgIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAgICAgICAgIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgKVxufVxuXG5leHBvcnQgZGVmYXVsdCBBcHBMYXlvdXRcbiJdfQ== */\n/*@ sourceURL=/Users/dan/Documents/Repositories/material-next-template/pages/index.js */",
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    styleId: "2087383679",
-    css: "body{margin:0;padding:0;background:#10171e;font-family:'Roboto',sans-serif;font-weight:300;color:rgba(255,255,255,.84);font-size:1.2em;-webkit-letter-spacing:.02em;-moz-letter-spacing:.02em;-ms-letter-spacing:.02em;letter-spacing:.02em;line-height:1.5em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYW4vRG9jdW1lbnRzL1JlcG9zaXRvcmllcy9tYXRlcmlhbC1uZXh0LXRlbXBsYXRlL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWtEeUIsQUFHb0IsU0FDQyxVQUNTLG1CQUNjLGdDQUNqQixnQkFDWSw0QkFDWixnQkFDSyxxR0FDSCxrQkFDaUIsbUNBQ0Qsa0NBQ3BDIiwiZmlsZSI6Ii9Vc2Vycy9kYW4vRG9jdW1lbnRzL1JlcG9zaXRvcmllcy9tYXRlcmlhbC1uZXh0LXRlbXBsYXRlL3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnXG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnXG5pbXBvcnQgeyBBcHBCYXIsIEFwcENvbnRlbnQsIERyYXdlciB9IGZyb20gJy4uL2NvbXBvbmVudHMnXG5pbXBvcnQgeyBUb3BBcHBCYXJGaXhlZEFkanVzdCB9IGZyb20gJ0BtYXRlcmlhbC9yZWFjdC10b3AtYXBwLWJhcidcblxuLy8gaW1wb3J0ICdAbWF0ZXJpYWwvcmVhY3QtZHJhd2VyL2Rpc3QvZHJhd2VyLm1pbi5jc3MnXG4vLyBpbXBvcnQgJ0BtYXRlcmlhbC9yZWFjdC1saXN0L2Rpc3QvbGlzdC5taW4uY3NzJ1xuLy8gaW1wb3J0ICdAbWF0ZXJpYWwvcmVhY3QtdG9wLWFwcC1iYXIvZGlzdC90b3AtYXBwLWJhci5taW4uY3NzJ1xuLy8gaW1wb3J0ICdAbWF0ZXJpYWwvcmVhY3QtbWF0ZXJpYWwtaWNvbi9kaXN0L21hdGVyaWFsLWljb24ubWluLmNzcydcblxuaW1wb3J0ICcuLi9pbmRleC5zY3NzJ1xuXG5jb25zdCBBcHBMYXlvdXQgPSAoKSA9PiB7XG4gIGNvbnN0IFtpc0RyYXdlck9wZW4sIHNldElzRHJhd2VyT3Blbl0gPSB1c2VTdGF0ZShmYWxzZSlcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDx0aXRsZT5NYXRlcmlhbCBOZXh0PC90aXRsZT5cbiAgICAgICAgPGxpbmsgaHJlZj1cImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vaWNvbj9mYW1pbHk9TWF0ZXJpYWwrSWNvbnNcIiByZWw9XCJzdHlsZXNoZWV0XCIgLz5cbiAgICAgICAgPGxpbmsgaHJlZj1cImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1Sb2JvdG9cIiByZWw9XCJzdHlsZXNoZWV0XCIgLz5cbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cImluaXRpYWwtc2NhbGU9MS4wLCB3aWR0aD1kZXZpY2Utd2lkdGhcIiAvPlxuICAgICAgPC9IZWFkPlxuICAgICAgPGRpdiBjbGFzc05hbWU9J2Rlc2t0b3AtZHJhd2VyLWNvbnRhaW5lcic+XG4gICAgICAgIDxEcmF3ZXJcbiAgICAgICAgICBpc09wZW49e2lzRHJhd2VyT3Blbn1cbiAgICAgICAgICBzZXRJc0RyYXdlck9wZW49e3NldElzRHJhd2VyT3Blbn1cbiAgICAgICAgLz5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9J2Rlc2t0b3AtZHJhd2VyLWFwcC1jb250ZW50Jz5cbiAgICAgICAgICA8QXBwQmFyXG4gICAgICAgICAgICBzZXRJc0RyYXdlck9wZW49e3NldElzRHJhd2VyT3Blbn1cbiAgICAgICAgICAvPlxuICAgICAgICAgIDxUb3BBcHBCYXJGaXhlZEFkanVzdD5cbiAgICAgICAgICAgIDxBcHBDb250ZW50IC8+XG4gICAgICAgICAgPC9Ub3BBcHBCYXJGaXhlZEFkanVzdD5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgQG1lZGlhIChtaW4td2lkdGg6IDg0MHB4KSB7XG4gICAgICAgICAgLmRlc2t0b3AtZHJhd2VyLWNvbnRhaW5lciB7XG4gICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICAgICAgICAgIGhlaWdodDogMTAwdmg7XG4gICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgICAgICAgIH1cbiAgICAgICAgICAuZGVza3RvcC1kcmF3ZXItYXBwLWNvbnRlbnQge1xuICAgICAgICAgICAgZmxleDogYXV0bztcbiAgICAgICAgICAgIG92ZXJmbG93OiBhdXRvO1xuICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgICAgPHN0eWxlIGdsb2JhbCBqc3g+e2BcbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgICAgYmFja2dyb3VuZDogIzEwMTcxZTtcbiAgICAgICAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgICAgICAgICBjb2xvcjogcmdiYSgyNTUsMjU1LDI1NSwuODQpO1xuICAgICAgICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgICAgICAgbGV0dGVyLXNwYWNpbmc6IC4wMmVtO1xuICAgICAgICAgIGxpbmUtaGVpZ2h0OiAxLjVlbTtcbiAgICAgICAgICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgICAgICAgICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gIClcbn1cblxuZXhwb3J0IGRlZmF1bHQgQXBwTGF5b3V0XG4iXX0= */\n/*@ sourceURL=/Users/dan/Documents/Repositories/material-next-template/pages/index.js */",
+    css: "@media (min-width:840px){.desktop-drawer-container.jsx-1244013185{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;height:100vh;overflow:hidden;}.desktop-drawer-app-content.jsx-1244013185{-webkit-flex:auto;-ms-flex:auto;flex:auto;overflow:auto;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYW4vRG9jdW1lbnRzL1JlcG9zaXRvcmllcy9tYXRlcmlhbC1uZXh0LXRlbXBsYXRlL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQThCa0IsQUFJMEIsQUFNSCwwQ0FDSSxjQUNoQixrQkFQcUIscUVBQ04sYUFDRyxnQkFDbEIiLCJmaWxlIjoiL1VzZXJzL2Rhbi9Eb2N1bWVudHMvUmVwb3NpdG9yaWVzL21hdGVyaWFsLW5leHQtdGVtcGxhdGUvcGFnZXMvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCdcbmltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcbmltcG9ydCB7IEFwcEJhciwgQXBwQ29udGVudCwgRHJhd2VyIH0gZnJvbSAnLi4vY29tcG9uZW50cydcbmltcG9ydCB7IFRvcEFwcEJhckZpeGVkQWRqdXN0IH0gZnJvbSAnQG1hdGVyaWFsL3JlYWN0LXRvcC1hcHAtYmFyJ1xuaW1wb3J0ICcuLi9pbmRleC5zY3NzJ1xuXG5jb25zdCBBcHBMYXlvdXQgPSAoKSA9PiB7XG4gIGNvbnN0IFtpc0RyYXdlck9wZW4sIHNldElzRHJhd2VyT3Blbl0gPSB1c2VTdGF0ZShmYWxzZSlcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDx0aXRsZT5NYXRlcmlhbCBOZXh0PC90aXRsZT5cbiAgICAgICAgPGxpbmsgaHJlZj1cImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vaWNvbj9mYW1pbHk9TWF0ZXJpYWwrSWNvbnNcIiByZWw9XCJzdHlsZXNoZWV0XCIgLz5cbiAgICAgICAgPGxpbmsgaHJlZj1cImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1Sb2JvdG9cIiByZWw9XCJzdHlsZXNoZWV0XCIgLz5cbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cImluaXRpYWwtc2NhbGU9MS4wLCB3aWR0aD1kZXZpY2Utd2lkdGhcIiAvPlxuICAgICAgPC9IZWFkPlxuICAgICAgPGRpdiBjbGFzc05hbWU9J2Rlc2t0b3AtZHJhd2VyLWNvbnRhaW5lcic+XG4gICAgICAgIDxEcmF3ZXJcbiAgICAgICAgICBpc09wZW49e2lzRHJhd2VyT3Blbn1cbiAgICAgICAgICBzZXRJc0RyYXdlck9wZW49e3NldElzRHJhd2VyT3Blbn1cbiAgICAgICAgLz5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9J2Rlc2t0b3AtZHJhd2VyLWFwcC1jb250ZW50Jz5cbiAgICAgICAgICA8QXBwQmFyXG4gICAgICAgICAgICBzZXRJc0RyYXdlck9wZW49e3NldElzRHJhd2VyT3Blbn1cbiAgICAgICAgICAvPlxuICAgICAgICAgIDxUb3BBcHBCYXJGaXhlZEFkanVzdD5cbiAgICAgICAgICAgIDxBcHBDb250ZW50IC8+XG4gICAgICAgICAgPC9Ub3BBcHBCYXJGaXhlZEFkanVzdD5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgQG1lZGlhIChtaW4td2lkdGg6IDg0MHB4KSB7XG4gICAgICAgICAgLmRlc2t0b3AtZHJhd2VyLWNvbnRhaW5lciB7XG4gICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICAgICAgICAgIGhlaWdodDogMTAwdmg7XG4gICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgICAgICAgIH1cbiAgICAgICAgICAuZGVza3RvcC1kcmF3ZXItYXBwLWNvbnRlbnQge1xuICAgICAgICAgICAgZmxleDogYXV0bztcbiAgICAgICAgICAgIG92ZXJmbG93OiBhdXRvO1xuICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApXG59XG5cbmV4cG9ydCBkZWZhdWx0IEFwcExheW91dFxuIl19 */\n/*@ sourceURL=/Users/dan/Documents/Repositories/material-next-template/pages/index.js */",
     __self: this
   }));
 };
