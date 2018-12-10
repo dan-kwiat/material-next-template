@@ -318,11 +318,23 @@ function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "setSelectedIndex", function (selectedIndex) {
-      console.log("Selected index: ".concat(selectedIndex));
+      console.log("List.handleSelect index: ".concat(selectedIndex));
 
       _this.setState({
         selectedIndex: selectedIndex
       });
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleClick", function (selectedIndex) {
+      return function () {
+        console.log("ListItem.onClick index: ".concat(selectedIndex));
+
+        _this.setState({
+          selectedIndex: selectedIndex
+        });
+
+        _this.props.onItemClick();
+      };
     });
 
     return _this;
@@ -331,46 +343,17 @@ function (_React$Component) {
   _createClass(DrawerList, [{
     key: "render",
     value: function render() {
-      var onItemClick = this.props.onItemClick;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2___default.a, {
         singleSelection: true,
         selectedIndex: this.state.selectedIndex,
         handleSelect: this.setSelectedIndex,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 26
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2__["ListItem"], {
-        onClick: onItemClick,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2__["ListItemGraphic"], {
-        graphic: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_3___default.a, {
-          icon: "home",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 28
-          },
-          __self: this
-        }),
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2__["ListItemText"], {
-        primaryText: "Home",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2__["ListItem"], {
-        onClick: onItemClick,
+        onClick: this.handleClick(0),
         __source: {
           fileName: _jsxFileName,
           lineNumber: 31
@@ -378,7 +361,7 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2__["ListItemGraphic"], {
         graphic: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_3___default.a, {
-          icon: "search",
+          icon: "home",
           __source: {
             fileName: _jsxFileName,
             lineNumber: 32
@@ -391,14 +374,14 @@ function (_React$Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2__["ListItemText"], {
-        primaryText: "Search",
+        primaryText: "Home",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 33
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2__["ListItem"], {
-        onClick: onItemClick,
+        onClick: this.handleClick(1),
         __source: {
           fileName: _jsxFileName,
           lineNumber: 35
@@ -406,7 +389,7 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2__["ListItemGraphic"], {
         graphic: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_3___default.a, {
-          icon: "settings",
+          icon: "search",
           __source: {
             fileName: _jsxFileName,
             lineNumber: 36
@@ -419,17 +402,45 @@ function (_React$Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2__["ListItemText"], {
-        primaryText: "Settings",
+        primaryText: "Search",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 37
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2__["ListItem"], {
+        onClick: this.handleClick(2),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2__["ListItemGraphic"], {
+        graphic: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_material_icon__WEBPACK_IMPORTED_MODULE_3___default.a, {
+          icon: "settings",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 40
+          },
+          __self: this
+        }),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2__["ListItemText"], {
+        primaryText: "Settings",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2__["ListItemMeta"], {
         meta: "meta info",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 42
         },
         __self: this
       })));
