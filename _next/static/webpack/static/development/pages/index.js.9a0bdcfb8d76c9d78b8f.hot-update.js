@@ -66,7 +66,7 @@ function (_React$Component) {
       selectedIndex: 0
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "setSelectedIndex", function (selectedIndex) {
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleSelect", function (selectedIndex) {
       console.log("List.handleSelect index: ".concat(selectedIndex));
 
       _this.setState({
@@ -95,7 +95,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_2___default.a, {
         singleSelection: true,
         selectedIndex: this.state.selectedIndex,
-        handleSelect: this.setSelectedIndex,
+        handleSelect: this.handleSelect,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 26
@@ -207,4 +207,4 @@ DrawerList.propTypes = {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.1a603a3f18f57ffde178.hot-update.js.map
+//# sourceMappingURL=index.js.9a0bdcfb8d76c9d78b8f.hot-update.js.map
