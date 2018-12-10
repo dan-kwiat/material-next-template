@@ -12,7 +12,7 @@ class DrawerList extends React.Component {
   state = {
     selectedIndex: 0,
   }
-  setSelectedIndex = selectedIndex => {
+  handleSelect = selectedIndex => {
     console.log(`List.handleSelect index: ${selectedIndex}`)
     this.setState({ selectedIndex })
   }
@@ -26,7 +26,7 @@ class DrawerList extends React.Component {
       <List
         singleSelection
         selectedIndex={this.state.selectedIndex}
-        handleSelect={this.setSelectedIndex}
+        handleSelect={this.handleSelect}
       >
         <ListItem onClick={this.handleClick(0)}>
           <ListItemGraphic graphic={<MaterialIcon icon='home'/>} />
