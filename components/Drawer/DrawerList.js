@@ -22,6 +22,7 @@ class DrawerList extends React.Component {
     this.props.onItemClick()
   }
   render() {
+    console.log(`ListItem.type.name: "${<ListItem />.type.name}"`)
     return (
       <List
         singleSelection
