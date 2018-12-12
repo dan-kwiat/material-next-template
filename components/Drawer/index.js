@@ -25,7 +25,6 @@ const Drawer = props => (
           props.setIsDrawerOpen && props.setIsDrawerOpen(false)
         }}
       />
-      <a href='/'>plain link</a>
     </DrawerContent>
   </DeviceAppropriateDrawer>
 )

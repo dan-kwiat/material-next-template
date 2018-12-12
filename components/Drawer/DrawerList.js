@@ -1,53 +1,60 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { withRouter } from 'next/router'
 import List, {
   ListItem,
-  ListItemText,
   ListItemGraphic,
+  ListItemText,
   ListItemMeta,
 } from '@material/react-list'
 import MaterialIcon from '@material/react-material-icon'
 
-class DrawerList extends React.Component {
-  state = {
-    selectedIndex: 0,
-  }
-  handleSelect = selectedIndex => {
-    console.log(`List.handleSelect index: ${selectedIndex}`)
-    this.setState({ selectedIndex })
-  }
-  handleClick = selectedIndex => () => {
-    console.log(`ListItem.onClick index: ${selectedIndex}`)
-    this.setState({ selectedIndex })
-    this.props.onItemClick()
-  }
-  render() {
-    console.log(`ListItem.type.name: "${<ListItem />.type.name}"`)
-    return (
-      <List
-        singleSelection
-        selectedIndex={this.state.selectedIndex}
-        handleSelect={this.handleSelect}
+const NAV_LINKS = [
+  {
+    path: '/',
+    icon: 'home',
+    label: 'Home',
+  },
+  {
+    path: '/search',
+    icon: 'search',
+    label: 'Search',
+  },
+  {
+    path: '/settings',
+    icon: 'settings',
+    label: 'Settings',
+    meta: 'meta info',
+  },
+]
+
+const DrawerList = ({ onItemClick, router }) => (
+  <List
+    tag="nav"
+    singleSelection
+    selectedIndex={NAV_LINKS.findIndex(x => x.path === router.pathname)} // needs polyfill?
+  >
+    {NAV_LINKS.map(({ path, icon, label, meta }) => (
+      <ListItem
+        tag="a"
+        key={path}
+        href={path}
+        onClick={e => {
+          // could prefetch routes in componentDidMount?
+          e.preventDefault()
+          router.push(path)
+          onItemClick()
+        }}
       >
-        <ListItem onClick={this.handleClick(0)}>
-          <ListItemGraphic graphic={<MaterialIcon icon='home'/>} />
-          <ListItemText primaryText='Home' />
-        </ListItem>
-        <ListItem onClick={this.handleClick(1)}>
-          <ListItemGraphic graphic={<MaterialIcon icon='search'/>} />
-          <ListItemText primaryText='Search' />
-        </ListItem>
-        <ListItem onClick={this.handleClick(2)}>
-          <ListItemGraphic graphic={<MaterialIcon icon='settings'/>} />
-          <ListItemText primaryText='Settings' />
-          <ListItemMeta meta='meta info' />
-        </ListItem>
-      </List>
-    )
-  }
-}
+        <ListItemGraphic graphic={<MaterialIcon icon={icon}/>} />
+        <ListItemText primaryText={label} />
+        <ListItemMeta meta={meta || ''} />
+      </ListItem>
+    ))}
+  </List>
+)
 DrawerList.propTypes = {
   onItemClick: PropTypes.func.isRequired,
 }
 
-export default DrawerList
+export default withRouter(DrawerList)
