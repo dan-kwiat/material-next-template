@@ -4711,7 +4711,7 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       var router = this.props.router;
-      console.log('prefetching', NAV_LINKS[2].path);
+      console.log('prefetching', NAV_LINKS[1].path);
       router.prefetch(NAV_LINKS[1].path); // do not include HOME_ROUTE prefix
     }
   }, {
