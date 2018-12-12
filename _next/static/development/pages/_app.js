@@ -4712,7 +4712,7 @@ function (_React$Component) {
     value: function componentDidMount() {
       var router = this.props.router;
       console.log('prefetching', NAV_LINKS[2].path);
-      router.prefetch("".concat(HOME_ROUTE).concat(NAV_LINKS[2].path));
+      router.prefetch(NAV_LINKS[1].path); // do not include HOME_ROUTE prefix
     }
   }, {
     key: "render",
@@ -4720,6 +4720,7 @@ function (_React$Component) {
       var _this$props = this.props,
           onItemClick = _this$props.onItemClick,
           router = _this$props.router;
+      console.log('pathname', router.pathname);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4___default.a, {
         tag: "nav",
         singleSelection: true,
@@ -4729,7 +4730,7 @@ function (_React$Component) {
         ,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 45
         },
         __self: this
       }, NAV_LINKS.map(function (_ref) {
@@ -4749,7 +4750,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 50
+            lineNumber: 51
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItemGraphic"], {
@@ -4757,27 +4758,27 @@ function (_React$Component) {
             icon: icon,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 61
+              lineNumber: 62
             },
             __self: this
           }),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 61
+            lineNumber: 62
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItemText"], {
           primaryText: label,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 62
+            lineNumber: 63
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItemMeta"], {
           meta: meta || '',
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 63
+            lineNumber: 64
           },
           __self: this
         }));
