@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { withRouter } from 'next/router'
+import getConfig from 'next/config'
 import List, {
   ListItem,
   ListItemGraphic,
@@ -8,6 +9,9 @@ import List, {
   ListItemMeta,
 } from '@material/react-list'
 import MaterialIcon from '@material/react-material-icon'
+
+const { publicRuntimeConfig } = getConfig()
+const { HOME_ROUTE } = publicRuntimeConfig
 
 const NAV_LINKS = [
   {
@@ -38,11 +42,11 @@ const DrawerList = ({ onItemClick, router }) => (
       <ListItem
         tag="a"
         key={path}
-        href={path}
+        href={`${HOME_ROUTE}${path}`}
         onClick={e => {
           // could prefetch routes in componentDidMount?
           e.preventDefault()
-          router.push(path)
+          router.push(`${HOME_ROUTE}${path}`)
           onItemClick()
         }}
       >
