@@ -1052,5 +1052,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+a {
+  color: rgba(255, 255, 255, 0.84); }
+
 
 /*# sourceMappingURL=styles.chunk.css.map*/
