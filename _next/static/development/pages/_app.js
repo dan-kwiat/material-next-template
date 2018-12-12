@@ -4654,7 +4654,8 @@ var _jsxFileName = "/Users/dan/Documents/Repositories/material-next-template/com
 
 
 
-var PREFIX = process.env.HOME_ROUTE || '';
+var IS_PRODUCTION = "development" === 'production';
+var PREFIX = IS_PRODUCTION && process.env.HOME_ROUTE || '';
 console.log('PREFIX', PREFIX);
 var NAV_LINKS = [{
   path: '/',
@@ -4683,7 +4684,7 @@ var DrawerList = function DrawerList(_ref) {
     ,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
     },
     __self: this
   }, NAV_LINKS.map(function (_ref2) {
@@ -4703,7 +4704,7 @@ var DrawerList = function DrawerList(_ref) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41
+        lineNumber: 42
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemGraphic"], {
@@ -4711,27 +4712,27 @@ var DrawerList = function DrawerList(_ref) {
         icon: icon,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 53
         },
         __self: this
       }),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52
+        lineNumber: 53
       },
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
       primaryText: label,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53
+        lineNumber: 54
       },
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_3__["ListItemMeta"], {
       meta: meta || '',
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54
+        lineNumber: 55
       },
       __self: this
     }));
