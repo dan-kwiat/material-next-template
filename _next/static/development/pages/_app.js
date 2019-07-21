@@ -4510,7 +4510,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/dan/Documents/Repositories/material-next-template/components/AppBar.js";
 
- // import TopAppBar from '@material/react-top-app-bar'
 
 
 
@@ -4525,20 +4524,20 @@ var Bar = function Bar(_ref) {
     fixed: fixed,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_3__["TopAppBarRow"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 17
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_3__["TopAppBarSection"], {
     align: "start",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 18
     },
     __self: this
   }, renderToggle ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_3__["TopAppBarIcon"], {
@@ -4546,13 +4545,13 @@ var Bar = function Bar(_ref) {
     tabIndex: 0,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 20
     },
     __self: this
   }, renderToggle()) : null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_top_app_bar__WEBPACK_IMPORTED_MODULE_3__["TopAppBarTitle"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 24
     },
     __self: this
   }, title))));
@@ -4572,14 +4571,14 @@ var AppBar = function AppBar(_ref2) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 36
         },
         __self: this
       });
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 32
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Bar, {
@@ -4588,14 +4587,14 @@ var AppBar = function AppBar(_ref2) {
     fixed: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 43
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     jsx: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 48
     },
     __self: this
   }, "\n      @media (min-width: 840px) {\n        .mobile-appbar {\n          display: none !important;\n        }\n      }\n      @media (max-width: 839px) {\n        .desktop-appbar {\n          display: none !important;\n        }\n      }\n    "));
