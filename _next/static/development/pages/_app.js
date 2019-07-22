@@ -139,6 +139,11 @@ var NAV_LINKS = [{
   icon: 'settings',
   label: 'Settings',
   meta: 'meta info'
+}, {
+  path: '/movies',
+  icon: 'movie',
+  label: 'Movies',
+  meta: 'dynamic'
 }];
 
 var DrawerList =
@@ -177,7 +182,7 @@ function (_Component) {
         selectedIndex: selectedIndex,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 54
         },
         __self: this
       }, NAV_LINKS.map(function (_ref) {
@@ -196,7 +201,7 @@ function (_Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 54
+            lineNumber: 60
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_9__["ListItemGraphic"], {
@@ -204,27 +209,27 @@ function (_Component) {
             icon: icon,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 64
+              lineNumber: 70
             },
             __self: this
           }),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 64
+            lineNumber: 70
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_9__["ListItemText"], {
           primaryText: label,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 65
+            lineNumber: 71
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_9__["ListItemMeta"], {
           meta: meta || '',
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 66
+            lineNumber: 72
           },
           __self: this
         }));
