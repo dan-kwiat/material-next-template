@@ -1575,6 +1575,14 @@ a.mdc-list-item {
   .app-drawer .mdc-list-item__graphic {
     color: rgba(255, 255, 255, 0.6); }
 
+@media (min-width: 840px) {
+  .mobile-only {
+    display: none !important; } }
+
+@media (max-width: 839px) {
+  .non-mobile-only {
+    display: none !important; } }
+
 body {
   margin: 0;
   padding: 0;

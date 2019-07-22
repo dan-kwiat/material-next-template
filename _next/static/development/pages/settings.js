@@ -1118,7 +1118,7 @@ var Settings = function Settings() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 2:
 /*!*****************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsettings&absolutePagePath=%2FUsers%2Fdan%2FDocuments%2FRepositories%2Fmaterial-next-template%2Fpages%2Fsettings.js ***!
   \*****************************************************************************************************************************************************************/
@@ -1141,5 +1141,5 @@ module.exports = dll_c8f2bf67145e2f978a34;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=settings.js.map
