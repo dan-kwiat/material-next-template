@@ -323,7 +323,7 @@ var Drawer = function Drawer(_ref2) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    className: "mobile-only",
+    className: "app-drawer mobile-only",
     modal: true,
     open: isOpen,
     onOpen: function onOpen() {
@@ -345,7 +345,7 @@ var Drawer = function Drawer(_ref2) {
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_drawer__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    className: "non-mobile-only",
+    className: "app-drawer non-mobile-only",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
