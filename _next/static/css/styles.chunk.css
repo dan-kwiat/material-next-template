@@ -1557,22 +1557,22 @@ a.mdc-list-item {
   .mdc-top-app-bar--fixed-adjust {
     padding-top: 56px; } }
 
-.desktop-appbar, .mobile-appbar {
+.app-bar {
   background-color: #1c2938;
   color: white; }
 
-.modal-drawer, .permanent-drawer {
+.app-drawer {
   background-color: #15202b;
   border-color: rgba(255, 255, 255, 0.12); }
-  .modal-drawer .mdc-drawer__title, .permanent-drawer .mdc-drawer__title {
+  .app-drawer .mdc-drawer__title {
     color: rgba(255, 255, 255, 0.87); }
-  .modal-drawer .mdc-list-group__subheader, .permanent-drawer .mdc-list-group__subheader {
+  .app-drawer .mdc-list-group__subheader {
     color: rgba(255, 255, 255, 0.6); }
-  .modal-drawer .mdc-drawer__subtitle, .permanent-drawer .mdc-drawer__subtitle {
+  .app-drawer .mdc-drawer__subtitle {
     color: rgba(255, 255, 255, 0.6); }
-  .modal-drawer .mdc-list-item, .permanent-drawer .mdc-list-item {
+  .app-drawer .mdc-list-item {
     color: rgba(255, 255, 255, 0.87); }
-  .modal-drawer .mdc-list-item__graphic, .permanent-drawer .mdc-list-item__graphic {
+  .app-drawer .mdc-list-item__graphic {
     color: rgba(255, 255, 255, 0.6); }
 
 body {
