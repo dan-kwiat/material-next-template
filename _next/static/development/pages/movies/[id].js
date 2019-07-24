@@ -2897,6 +2897,7 @@ var _jsxFileName = "/Users/dan/Documents/Repositories/material-next-template/pag
 
 var Post = function Post(props) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "content-container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
@@ -2968,7 +2969,7 @@ function () {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!***********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fmovies%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fdan%2FDocuments%2FRepositories%2Fmaterial-next-template%2Fpages%2Fmovies%2F%5Bid%5D.js ***!
   \***********************************************************************************************************************************************************************************/
@@ -2991,5 +2992,5 @@ module.exports = dll_c8f2bf67145e2f978a34;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map
